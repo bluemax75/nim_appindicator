@@ -59,20 +59,20 @@ proc set_icon_theme_path(app_indicator: PAppIndicator, icon_theme_path: cstring)
 proc set_ordering_index(app_indicator: PAppIndicator, ordering_index: guint32) {.cdecl, dynlib: lib, importc:"app_indicator_set_ordering_index".}
 proc set_secondary_activate_target(app_indicator: PAppIndicator, menuitem: PWidget) {.cdecl, dynlib: lib, importc:"app_indicator_set_secondary_activate_target".}
 proc set_title(app_indicator: PAppIndicator, title: cstring) {.cdecl, dynlib: lib, importc:"app_indicator_set_title".}
-proc app_indicator_get_id(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_category(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_status(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_icon(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_icon_desc(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_icon_theme_path(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_attention_icon(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_attention_icon_desc(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_title(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_menu(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_label(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_label_guide(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_ordering_index(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
-proc app_indicator_get_secondary_activate_target(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_id(app_indicator: PAppIndicator): cstring {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_category(app_indicator: PAppIndicator): TAppIndicatorCategory {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_status(app_indicator: PAppIndicator): TAppIndicatorStatus {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_icon(app_indicator: PAppIndicator): cstring {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_icon_desc(app_indicator: PAppIndicator): cstring {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_icon_theme_path(app_indicator: PAppIndicator): cstring {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_attention_icon(app_indicator: PAppIndicator): cstring {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_attention_icon_desc(app_indicator: PAppIndicator): cstring {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_title(app_indicator: PAppIndicator): cstring {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_menu(app_indicator: PAppIndicator): PMenu {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_label(app_indicator: PAppIndicator): cstring {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_label_guide(app_indicator: PAppIndicator): cstring {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_ordering_index(app_indicator: PAppIndicator): guint32 {.cdecl, dynlib: lib, importc:"app_indicator_get".}
+proc app_indicator_get_secondary_activate_target(app_indicator: PAppIndicator): PWidget {.cdecl, dynlib: lib, importc:"app_indicator_get".}
 proc app_indicator_build_menu_from_desktop(app_indicator: PAppIndicator) {.cdecl, dynlib: lib, importc:"app_indicator_get".}
 
 
